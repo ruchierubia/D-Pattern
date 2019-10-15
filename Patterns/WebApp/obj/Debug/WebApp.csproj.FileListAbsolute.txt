@@ -81,9 +81,6 @@ C:\Users\Ruchie Rubia\source\repos\Design-Pattern\WebApp\bin\Logger.pdb
 C:\Users\Ruchie Rubia\source\repos\Design-Pattern\WebApp\obj\Debug\WebApp.csprojAssemblyReference.cache
 C:\Users\Ruchie Rubia\source\repos\Pattern1\Design-Pattern\WebApp\obj\Debug\WebApp.dll
 C:\Users\Ruchie Rubia\source\repos\Pattern1\Design-Pattern\WebApp\obj\Debug\WebApp.pdb
-C:\Users\Ruchie Rubia\source\repos\Pattern4\D-Pattern\Patterns\WebApp\obj\Debug\WebApp.dll
-C:\Users\Ruchie Rubia\source\repos\Pattern4\D-Pattern\Patterns\WebApp\obj\Debug\WebApp.pdb
-C:\Users\Ruchie Rubia\source\repos\Pattern4\D-Pattern\Patterns\WebApp\obj\Debug\WebApp.csprojAssemblyReference.cache
 C:\Users\Ruchie Rubia\source\repos\Pattern4\D-Pattern\Patterns\WebApp\bin\WebApp.dll.config
 C:\Users\Ruchie Rubia\source\repos\Pattern4\D-Pattern\Patterns\WebApp\bin\WebApp.dll
 C:\Users\Ruchie Rubia\source\repos\Pattern4\D-Pattern\Patterns\WebApp\bin\WebApp.pdb
@@ -161,4 +158,7 @@ C:\Users\Ruchie Rubia\source\repos\Pattern4\D-Pattern\Patterns\WebApp\bin\System
 C:\Users\Ruchie Rubia\source\repos\Pattern4\D-Pattern\Patterns\WebApp\bin\Newtonsoft.Json.xml
 C:\Users\Ruchie Rubia\source\repos\Pattern4\D-Pattern\Patterns\WebApp\bin\Antlr3.Runtime.pdb
 C:\Users\Ruchie Rubia\source\repos\Pattern4\D-Pattern\Patterns\WebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Ruchie Rubia\source\repos\Pattern4\D-Pattern\Patterns\WebApp\obj\Debug\WebApp.csprojAssemblyReference.cache
 C:\Users\Ruchie Rubia\source\repos\Pattern4\D-Pattern\Patterns\WebApp\obj\Debug\WebApp.csproj.CopyComplete
+C:\Users\Ruchie Rubia\source\repos\Pattern4\D-Pattern\Patterns\WebApp\obj\Debug\WebApp.dll
+C:\Users\Ruchie Rubia\source\repos\Pattern4\D-Pattern\Patterns\WebApp\obj\Debug\WebApp.pdb

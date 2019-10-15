@@ -8,9 +8,36 @@
     <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="JobDescription" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Number" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="Department" Type="varchar" MaxLength="50" />
+    <Property Name="Department" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="HourlyPay" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Bonus" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="EmployeeTypeID" Type="int" Nullable="false" />
   </EntityType>
+  <EntityType Name="Employee_Type">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeType" Type="varchar" MaxLength="150" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Employee_Employee_Type">
+    <End Role="Employee_Type" Type="Self.Employee_Type" Multiplicity="1" />
+    <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee_Type">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="EmployeeTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <EntityContainer Name="EmployeePortalModelStoreContainer">
     <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Employee_Type" EntityType="Self.Employee_Type" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Employee_Employee_Type" Association="Self.FK_Employee_Employee_Type">
+      <End Role="Employee_Type" EntitySet="Employee_Type" />
+      <End Role="Employee" EntitySet="Employee" />
+    </AssociationSet>
   </EntityContainer>
 </Schema>

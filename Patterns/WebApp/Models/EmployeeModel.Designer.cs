@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\Ruchie Rubia\source\repos\Design-Pattern\WebApp\Models\EmployeeModel.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\Ruchie Rubia\source\repos\Pattern4\D-Pattern\Patterns\WebApp\Models\EmployeeModel.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

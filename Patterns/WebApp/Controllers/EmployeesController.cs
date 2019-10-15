@@ -13,12 +13,10 @@ namespace WebApp.Controllers
 {
     public class EmployeesController : Controller
     {
-        private readonly ILog _ILog;
         private EmployeePortalEntities db = new EmployeePortalEntities();
 
         public EmployeesController()
         {
-            _ILog = Log.GetInstance;
         }
 
         // GET: Employees
@@ -129,13 +127,6 @@ namespace WebApp.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
-        }
-
-        protected override void OnException(ExceptionContext filterContext)
-        {
-            _ILog.LogException(filterContext.Exception.ToString());
-            filterContext.ExceptionHandled = true;
-            this.View("Error").ExecuteResult(this.ControllerContext);
         }
     }
 }
