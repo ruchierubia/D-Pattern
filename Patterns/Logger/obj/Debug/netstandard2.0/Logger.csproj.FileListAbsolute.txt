@@ -1,0 +1,8 @@
+C:\Users\Ruchie Rubia\source\repos\Pattern4\D-Pattern\Patterns\Logger\bin\Debug\netstandard2.0\Logger.deps.json
+C:\Users\Ruchie Rubia\source\repos\Pattern4\D-Pattern\Patterns\Logger\bin\Debug\netstandard2.0\Logger.dll
+C:\Users\Ruchie Rubia\source\repos\Pattern4\D-Pattern\Patterns\Logger\bin\Debug\netstandard2.0\Logger.pdb
+C:\Users\Ruchie Rubia\source\repos\Pattern4\D-Pattern\Patterns\Logger\obj\Debug\netstandard2.0\Logger.csprojAssemblyReference.cache
+C:\Users\Ruchie Rubia\source\repos\Pattern4\D-Pattern\Patterns\Logger\obj\Debug\netstandard2.0\Logger.AssemblyInfoInputs.cache
+C:\Users\Ruchie Rubia\source\repos\Pattern4\D-Pattern\Patterns\Logger\obj\Debug\netstandard2.0\Logger.AssemblyInfo.cs
+C:\Users\Ruchie Rubia\source\repos\Pattern4\D-Pattern\Patterns\Logger\obj\Debug\netstandard2.0\Logger.dll
+C:\Users\Ruchie Rubia\source\repos\Pattern4\D-Pattern\Patterns\Logger\obj\Debug\netstandard2.0\Logger.pdb
