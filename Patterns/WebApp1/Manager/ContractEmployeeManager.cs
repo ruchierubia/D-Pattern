@@ -16,5 +16,10 @@ namespace WebApp1.Manager
         {
             return 12;
         }
+
+        public decimal GetMedicalAllowance()
+        {
+            return 100;
+        }
     }
 }

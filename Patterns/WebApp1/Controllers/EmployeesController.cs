@@ -7,7 +7,8 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using WebApp1.Factory;
+//using WebApp1.Factory;//simple factory
+using WebApp1.Factory.FactoryMethod;//factory method
 using WebApp1.Manager;
 using WebApp1.Models;
 
@@ -59,12 +60,9 @@ namespace WebApp1.Controllers
         {
             if (ModelState.IsValid)
             {
-                EmployeeManagerFactory empFactory = new EmployeeManagerFactory();
-                IEmployeeManager empManager = empFactory.GetEmployeeManager(1);
-                employee.Bunos = empManager.GetBonus();
-                employee.HourlyPay = empManager.GetPay();
-
-
+                BaseEmployeeFactory empFactory = new EmployeeManagerFactory().CreateFactory(employee);
+                empFactory.ApplySalary();
+        
                 db.Employees.Add(employee);
                 db.SaveChanges();
                 return RedirectToAction("Index");
