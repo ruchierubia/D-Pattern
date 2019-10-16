@@ -13,10 +13,10 @@ namespace WebApp1.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class EmployeePortalEntities : DbContext
+    public partial class EmployeePortalEntities1 : DbContext
     {
-        public EmployeePortalEntities()
-            : base("name=EmployeePortalEntities")
+        public EmployeePortalEntities1()
+            : base("name=EmployeePortalEntities1")
         {
         }
     
@@ -26,5 +26,6 @@ namespace WebApp1.Models
         }
     
         public virtual DbSet<Employee> Employees { get; set; }
+        public virtual DbSet<Employee_Type> Employee_Type { get; set; }
     }
 }

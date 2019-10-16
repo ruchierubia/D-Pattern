@@ -7,11 +7,13 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using WebApp1.Factory;
+using WebApp1.Manager;
 using WebApp1.Models;
 
 namespace WebApp1.Controllers
 {
-    public class EmployeesController : Controller
+    public class EmployeesController : BaseController
     {
         private readonly ILog _ILog;
         private EmployeePortalEntities db = new EmployeePortalEntities();
@@ -57,6 +59,12 @@ namespace WebApp1.Controllers
         {
             if (ModelState.IsValid)
             {
+                EmployeeManagerFactory empFactory = new EmployeeManagerFactory();
+                IEmployeeManager empManager = empFactory.GetEmployeeManager(1);
+                employee.Bunos = empManager.GetBonus();
+                employee.HourlyPay = empManager.GetPay();
+
+
                 db.Employees.Add(employee);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -120,13 +128,6 @@ namespace WebApp1.Controllers
             db.Employees.Remove(employee);
             db.SaveChanges();
             return RedirectToAction("Index");
-        }
-
-        protected override void OnException(ExceptionContext filterContext)
-        {
-            _ILog.LogException(filterContext.Exception.ToString());
-            filterContext.ExceptionHandled = true;
-            this.View("Error").ExecuteResult(this.ControllerContext);
         }
 
         protected override void Dispose(bool disposing)
